@@ -1,0 +1,17 @@
+@import "../../css/style.css";
+
+
+
+
+
+
+.main__box {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+.main__contanier {
+    width: 90%;
+    height: 2200px;
+    padding: 1.5% 5%;
+}
