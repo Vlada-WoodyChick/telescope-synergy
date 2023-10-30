@@ -3,6 +3,7 @@
 .main__box {
     width: 100%;    
     overflow: auto;
+    height: auto;
 }
 .main__contanier {
     width: 100%;    
@@ -11,7 +12,10 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content:space-between;
+    align-items: center;
+
     overflow:auto;
+    flex: 250px;
 }
 
 
@@ -19,7 +23,7 @@
 
     width: 250px;
     height: 515px;
-    margin: 5px;
+    margin: 5px 5px;
     padding: 5px;
     color: #092878;    
     font-size: 16px;

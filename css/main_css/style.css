@@ -150,7 +150,7 @@ body {
 }
 .main__contanier {
     width: 90%;
-    height: 2200px;
+    
     padding: 1.5% 5%;
 
 }
@@ -158,8 +158,8 @@ body {
 .footer {
     background: #dcdcdc;
     height: 70px;
-    position: fixed;
-    bottom: 0;
+     /* position: fixed; */
+    bottom: 0; 
     width: 100%;
     margin:  0;
     padding: 0 ;
