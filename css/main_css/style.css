@@ -1,10 +1,16 @@
-@import "../node_modules/normalize.css/normalize.css";
+@import "/node_modules/normalize.css/normalize.css";
 
 @font-face {
-    font-family: 'Oswald';
+    font-family: "Oswald";
     src: url(../fonts/Oswald/Oswald-VariableFont_wght.ttf);
 }
-
+@font-face {
+    font-family: "PTSerif";
+    src: url(/fonts/PT_Serif/PTSerif-Regular.ttf);
+}
+* {
+    box-sizing: border-box;
+}
 body {
     background: #092878;
     box-sizing: border-box;
@@ -13,13 +19,13 @@ body {
     margin: 0;
     padding: 0;
     width: 100%;
+    overflow: auto;
 }
 
 .header {
     background: #dcdcdc;
     width: 100%;
     height: 72px;
-    
 }
 .header__content {
     display: flex;
@@ -30,19 +36,22 @@ body {
 }
 
 .header__block {
-    width: 300px;
     height: 70px;
     margin: 0 10px;
     background-color: #dcdcdc;
+    width: 100%;
+    
 }
 
 .header__block_upper-block {
     display: grid;
     grid-template-columns: 70px 200px;
+    width: 35%;
 }
 
 .header__block_lower-block {
-    float: right;
+    /* float: right; */
+    width: 60%;
 }
 
 .img__box_header {
@@ -80,7 +89,7 @@ body {
     width: 80%;
     height: 15%;
     text-align: center;
-    font-family: Oswald;
+    font-family: PTSerif;
     font-size: 18px;
     font-style: normal;
     font-weight: 400;
@@ -94,34 +103,43 @@ body {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    align-items:center;
+    justify-content: flex-end;
+    align-items: center;
     padding: 0;
     margin: 0;
 }
 
-.menu__item_write {
-    width: 100px;
-    height: 20px;
-    margin: 0 5px 0 0;
-}
-.menu__item_reg {
-    width: 130px;
-    height: 20px;
-    margin: 0 0 0 5px;
-}
 .menu__item {
     list-style-type: none;
     border-radius: 35px;
     background: rgba(18, 63, 226, 0.16);
     border: #092878 solid 1px;
-    color: #092878;
+    text-wrap: wrap;
     font-family: Oswald;
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
-    line-height: normal;
+    line-height: 1.4;
     text-align: center;
     line-height: 1.2;
+    padding: 5px;
+    margin: 2px;
+    width: 160px;
+}
+
+.menu__item_order {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 1.4;
+    border: #092878 solid 2px;
+    
+}
+
+.link__header-menu {
+    text-decoration: none;
+    color: #092878;
+    cursor: pointer;
 }
 
 .main__box {
@@ -135,45 +153,46 @@ body {
     padding: 1.5% 5%;
 }
 
-
 .footer {
     background: #dcdcdc;
     height: 70px;
     position: fixed;
     bottom: 0;
     width: 100%;
-    margin: 0;
+    margin:  0;
+    padding: 0 ;
+}
+.footer__block{
+    background-color: #092878;
+    height: 2%;
     padding: 0;
-
+    margin: 0;
 }
 
-.footer__list{
+.footer__list {
     width: 100%;
     height: 50px;
     margin: 5px auto 15px;
     padding: 0;
     list-style-type: none;
-    color: #092878;  
+    color: #092878;
     font-family: Oswald;
     text-align: center;
     font-style: normal;
     font-weight: 400;
     line-height: 1.05;
-    
-
 }
 
-
-
-@media (max-width: 615px) {
+@media (max-width: 700px) {
     .header {
         background: #dcdcdc;
         padding-left: 5%;
         padding-right: 5%;
         padding-top: 5px;
         padding-bottom: 5px;
-        width: 90%;
-        height: 140px;
+        width: 100%;
+        height: 160px;
+        /* height: 140px; */
     }
     .header__content {
         display: flex;
@@ -183,13 +202,14 @@ body {
     }
 
     .header__block_lower-block {
-        float: none;
-        height: 50px;
+        /* float: none; */
+        width: 100%;
+
     }
 
     .menu__block {
         width: 100%;
-        height: 40px;
+       
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
@@ -199,7 +219,7 @@ body {
         padding: 5px 0;
     }
 
-    .menu__item_write {
+    /* .menu__item_write {
         width: 100%;
         height: 20px;
         padding: 0;
@@ -210,12 +230,21 @@ body {
         height: 20px;
         padding: 0;
         margin: 0;
-    }
+    } */
     .menu__item {
         list-style-type: none;
         background: rgba(18, 63, 226, 0.16);
+        background: #dcdcdc;
         border: #092878 solid 1px;
         color: #092878;
         text-align: center;
+        width: 100%;
+        height: 20px;
+        padding: 0;
+        margin: 1px 0;
+        border-radius: 3px;
+        line-height: 1.4;
+        padding: 0 0 2px 0;
     }
+    
 }
