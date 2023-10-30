@@ -145,7 +145,8 @@ body {
 .main__box {
     width: 100%;
     height: auto;
-    overflow: hidden;
+    overflow: auto;
+    font-family: PTSerif;
 }
 .main__contanier {
     width: 90%;
