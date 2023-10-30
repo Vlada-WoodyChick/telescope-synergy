@@ -12,7 +12,7 @@
     
 }
 .main__contanier {
-    width: 95%;
+    width: 100%;
     
     padding: 15px 2.5%;
 } 
@@ -37,7 +37,11 @@
     
     
 }
-.content__img_el-1{
+.content__img_img-8{
+    width:100%
+
+}
+.content__img_el-8{
     width: 95%;
     height: auto;
     padding-left: 2.5%;
@@ -58,9 +62,8 @@
 .content__title {
     width: 100%;
     font-size: 40px;
-    
-
 }
+
 .content__text {
     width: 100%;
     
