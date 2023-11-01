@@ -149,7 +149,7 @@ body {
     font-family: PTSerif;
 }
 .main__contanier {
-    width: 90%;
+    width: 100%;
     
     padding: 1.5% 5%;
 
@@ -186,6 +186,7 @@ body {
 }
 
 @media (max-width: 700px) {
+   
     .header {
         
         background: #dcdcdc;
@@ -195,12 +196,14 @@ body {
         padding-bottom: 5px;
         width: 100%;
         height: 160px;
-        /* height: 140px; */
-    }
+       
     .header__content {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
+        width: 100%;
+    }
+    .header__block_upper-block{
         width: 100%;
     }
 
@@ -250,4 +253,5 @@ body {
         padding: 0 0 2px 0;
     }
     
+    }
 }
