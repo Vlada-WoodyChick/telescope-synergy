@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="ru">
 
@@ -8,7 +7,8 @@
 
 
     <link rel="stylesheet" href="../css/css_2/style.css">
-    <link rel="stylesheet" href="../css/main_css/style.css">
+    <link rel="stylesheet" href="../css/css_1/style.css">
+    <link rel="stylesheet" href="../css/css_5/style.css">
 
     <title>Телескопы в аренду по всей России.</title>
 </head>
@@ -45,7 +45,8 @@
             <div class="header__block header__block_lower-block">
                 <ul class="menu__block">
                     <li class="menu__item  menu__item_reg ">
-                        <a class="link__header-menu link__header-menu_item-reg" href="../index_html_3/index.html" target="_blank">
+                        <a class="link__header-menu link__header-menu_item-reg" href="../index_html_3/index.html"
+                            target="_blank">
                             на главную
                         </a>
                     </li>
@@ -72,26 +73,33 @@
     </header>
 
 
-    <main class="main__box">
-        <div class="main__contanier">
-            <div class="content__box">
-                <div class="content__img">
-<img class="content__img_el-8" src="../img/test/telescope_8.jpg" class="content__img_img-8"  alt="">
-                </div>
-                <div class="conten__text-block">
-                    <div class="content__title">
-                        Lorem ipsum dolor sit amet consectetur.
-                    </div>
-                    <div class="content__text">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus et aliquam delectus enim ullam voluptates laudantium aut nostrum eos, nihil iusto ex inventore libero odit. Ipsum quam placeat eius iusto commodi natus animi sapiente harum vero? Illo itaque dolorem ut eius cumque provident tenetur mollitia dolor ducimus optio laboriosam nihil quasi nam, vero perspiciatis dignissimos fuga, aspernatur ipsam, ex reiciendis voluptate. Magnam vel doloremque, excepturi omnis ut beatae asperiores, repellat animi debitis officiis eveniet ea harum deleniti explicabo nobis! Aperiam odio laborum suscipit, provident delectus in maxime ipsam accusantium est doloremque, culpa tempora illum consectetur ullam nulla ipsum maiores pariatur, rem debitis ad molestias. Consectetur, magnam reiciendis suscipit nobis autem ipsa. Iure asperiores et tenetur recusandae doloribus! Autem animi consequuntur laboriosam pariatur vero doloremque, incidunt at repudiandae neque et ipsa aliquam ad natus odio perspiciatis provident enim optio illo placeat aspernatur. Consequuntur minus corrupti voluptatem inventore ipsam. Quas, quisquam quaerat?
-                    </div>
+    <div class="form__box">
+        <form action="#" method="post">
+            <div> <label>Ваше имя:
+                    <br>
 
-                </div>
+                    <input type="text" id="name" size="25">
+                </label>
             </div>
+            <label>
+                Ваш телефон:
+                <br>
+                <input type="tel" size="12">
+            </label>
+            <div>
+                <label>Ведите техт письма:
+                    <br>
+                    <textarea></textarea>
+                </label>
 
-        </div>
-    </main>
-
+            </div>
+            <div>
+                <input type="submit" value="Отправить" id="submit">
+                <input type="reset" value="Очистить" id="reset">
+            </div>
+<div id="result"></div>
+        </form>
+    </div>
 
     <footer class="footer">
 
@@ -109,7 +117,18 @@
 
 
 
+    <script>
+        let reset = document.getElementById('reset');
+        let submit = document.getElementById('submit');
+        reset.style.fontSize = "20px"
+        reset.style.color = '#092878';
 
+        submit.style.fontSize = "20px"
+        submit.style.color = '#092878';
+        reset.addEventListener('click', () => { 
+            document.getElementById('result').innerHTML = document.getElementById('name').value + " Ваше письмо успешно отправлено"
+        });
+    </script>
 </body>
 
 

@@ -1,0 +1,166 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="../css/css_4/style_4.css">
+   <link rel="stylesheet" href="../css/css_2/style.css">
+   <link rel="stylesheet" href="../css/css_1/style.css">
+ 
+</head>
+
+<body>
+  <header class="header">
+    <div class="header__content">
+        <div class="header__block header__block_upper-block">
+
+            <div class=" img__box  ">
+                <div>
+                    <img src="../img/telescope_380.png" alt="Телескоп" width="" height="70px">
+                </div>
+            </div>
+
+
+            <div class="title__container">
+
+                <div class=".title__container-name   title__container_large-name">
+                    ЗВЕЗДОЧЕТ
+                </div>
+
+                <div>
+                    <div class=".title__container-name 
+                        title__container_small-name">
+                        аренда телескопов
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="header__block header__block_lower-block">
+            <ul class="menu__block">
+                <li class="menu__item  menu__item_reg ">
+                    <a class="link__header-menu link__header-menu_item-reg" href="../index_html_3/index.html" target="_blank">
+                        на главную
+                    </a>
+                </li>
+                <li class="menu__item  menu__item_reg "><a class="link__header-menu link__header-menu_item-reg"
+                        href="#">зарегистрируйтесь</a></li>
+                <li class="menu__item  menu__item_enter">
+                    <a href="#" class="link__header-menu link__header-menu_item-enter">
+                        войдите в акаунт
+                    </a>
+                </li>
+                <li class="menu__item  menu__item_order ">
+                    <a href="#" class="link__header-menu link__header-menu_item-order">
+                        закажите аренду
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+
+
+
+    </div>
+
+</header>
+<div class="main__slider">
+  <h2 style="text-align: center;">Галлерея</h2>
+
+  <div class="container">
+
+    <div class="mySlides">
+      <div class="numbertext">1 / 6</div>
+      <div class="img__mySlides"> 
+        <img src="../img/sky/sky_1.jpg" style="width: 100%;"  >
+      </div>
+     
+    </div>
+    <div class="mySlides">
+      <div class="numbertext">2 / 6</div>
+      <img src="../img/sky/sky_2.png" style="width: 100%;">
+    </div>
+    <div class="mySlides">
+      <div class="numbertext">3 / 6</div>
+      <img src="../img/sky/sky_3.png" style="width: 100%;">
+    </div>
+    <div class="mySlides">
+      <div class="numbertext">4 / 6</div>
+      <img src="../img/sky/sky_4.jpg" style="width: 100%;">
+    </div>
+    <div class="mySlides">
+      <div class="numbertext">5 / 6</div>
+      <img src="../img/sky/sky_5.png" style="width: 100%;">
+    </div>
+    <div class="mySlides">
+      <div class="numbertext">6 / 6</div>
+      <img src="../img/sky/sky_6.png" style="width: 100%;">
+    </div>
+
+    <a class="prev" onclick="plusSlides(-1)">-</a>
+    <a class="next" onclick="plusSlides(1)">+</a>
+
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+
+    <div class="row">
+      <div class="column">
+        <img class="demo cursor" src="../img/sky/sky_1.jpg" style="width: 100%" onclick="currentSlide(1)" alt="Горный хребет">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="../img/sky/sky_2.png" style="width: 100%" onclick="currentSlide(2)" alt="Небо">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="../img/sky/sky_3.png" style="width: 100%" onclick="currentSlide(3)" alt="Облака">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="../img/sky/sky_4.jpg" style="width: 100%" onclick="currentSlide(4)" alt="Звезды над несом">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="../img/sky/sky_5.png" style="width: 100%" onclick="currentSlide(5)" alt="Одинокое дерево">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="../img/sky/sky_6.png" style="width: 100%" onclick="currentSlide(6)" alt="Перевал">
+      </div>
+    </div>
+
+  </div>
+</div>
+  <script>
+    var slideIndex = 1;
+    showSlides(slideIndex);
+
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("demo");
+      var captionText = document.getElementById("caption");
+      if (n > slides.length) { slideIndex = 1 }
+      if (n < 1) { slideIndex = slides.length }
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      // for (i = 0; i < dots.length; i++) {
+      //   dots[i].className = dots[i].className.replace("active", "");
+      // }
+      slides[slideIndex - 1].style.display = "block";
+      // dots[slideIndex - 1].className += "active";
+      captionText.innerHTML = dots[slideIndex - 1].alt;
+    }
+  </script>
+</body>
+
+</html>

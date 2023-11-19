@@ -1,0 +1,21 @@
+
+.form__box{
+    width: 60%;
+    height: 80vh;
+    background:  #dcdcdc;
+    margin: 5vh auto;
+    padding: 5vh 5%;
+    color:  #092878;
+    font-size: 20px;
+}
+ textarea{
+    width: 90%;
+    height: 30vh;
+ }
+
+@media (max-width: 700px) {
+    .form__box{
+        width: 90%;
+    }
+
+}
