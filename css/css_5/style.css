@@ -1,7 +1,7 @@
 
-.form__box{
+.form__box, .result{
     width: 60%;
-    height: 80vh;
+   
     background:  #dcdcdc;
     margin: 5vh auto;
     padding: 5vh 5%;
@@ -13,9 +13,18 @@
     height: 30vh;
  }
 
+ .form__box{
+    height: 70vh;
+ }
+  
+ .result{
+    height: 10vh;
+ }
 @media (max-width: 700px) {
     .form__box{
         width: 90%;
     }
-
+.result{
+    width: 90%;
+ }
 }

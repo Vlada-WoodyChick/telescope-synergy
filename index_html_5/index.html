@@ -78,18 +78,18 @@
             <div> <label>Ваше имя:
                     <br>
 
-                    <input type="text" id="name" size="25">
+                    <input type="text" id="name" size="25" required>
                 </label>
-            </div>
+            </div> 
             <label>
                 Ваш телефон:
                 <br>
-                <input type="tel" size="12">
+                <input type="tel" size="12" placeholder="+79211234567" required>
             </label>
             <div>
                 <label>Ведите техт письма:
                     <br>
-                    <textarea></textarea>
+                    <textarea required></textarea>
                 </label>
 
             </div>
@@ -97,8 +97,9 @@
                 <input type="submit" value="Отправить" id="submit">
                 <input type="reset" value="Очистить" id="reset">
             </div>
-<div id="result"></div>
+
         </form>
+        <div id="result"></div>
     </div>
 
     <footer class="footer">
@@ -120,12 +121,15 @@
     <script>
         let reset = document.getElementById('reset');
         let submit = document.getElementById('submit');
+        let result = document.getElementById('result');
+        
+        
         reset.style.fontSize = "20px"
         reset.style.color = '#092878';
 
         submit.style.fontSize = "20px"
         submit.style.color = '#092878';
-        
+        submit.addEventListener('click', alert('Вашe письмо успешно отправлено!'));
     </script>
 </body>
 
