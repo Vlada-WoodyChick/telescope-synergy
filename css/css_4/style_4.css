@@ -6,7 +6,9 @@ body {
   * {
     box-sizing: border-box;
   }
-
+.main__slider{
+  background-color: #dcdcdc;
+}
   img {
     vertical-align: middle;
   }
@@ -49,20 +51,25 @@ body {
   .next:hover {
     background-color: rgba(0, 0, 0, 0.7);
   }
-
+h2{
+  background-color: #dcdcdc;
+  color: #092878;
+}
   .numberText {
-    color: #f2f2f2;
+    
+    color: #092878;
     font-size: 16px;
     padding: 8px 12px;
     position: absolute;
     top: 0;
+    background-color: #dcdcdc;
   }
 
   .caption-container {
     text-align: center;
-    background-color: #222;
+    background-color:#dcdcdc ;
     padding: 3px 16px;
-    color: white;
+    color: #092878;
     font-family: "Times", serif;
   }
 

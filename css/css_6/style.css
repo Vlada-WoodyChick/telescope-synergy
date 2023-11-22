@@ -1,6 +1,15 @@
 .main__contacts{
+    display: flex;
+    flex-direction: column;
     height: 80vh;
     font-size: 20px;
     color: #dcdcdc;
     padding: 10vh 10%;
+    overflow: auto;
+    text-wrap: wrap;
+}
+@media (max-width: 700px){
+    h1{
+        font-size: 20px;
+    }
 }
