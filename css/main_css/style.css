@@ -186,6 +186,11 @@ body {
 }
 
 @media (max-width: 700px) {
+body{
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
    
     .header {
         
@@ -196,7 +201,7 @@ body {
         padding-bottom: 5px;
         width: 100%;
         height: 190px;
-       
+    }
     .header__content {
         display: flex;
         flex-direction: row;
@@ -252,6 +257,18 @@ body {
         line-height: 1.4;
         padding: 0 0 2px 0;
     }
+    .title__container_large-name {
+        width: 100px;
+        height: 28x;
+        font-size: 18px;
+       
+    }
+    .title__container_small-name {
+        width: 80px;
+        height: 28px;
+        font-size: 14px;
+        
+    }
+    
     
     }
-}
