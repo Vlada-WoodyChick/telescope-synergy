@@ -1,4 +1,4 @@
-@import "/node_modules/normalize.css/normalize.css";
+/* @import "/node_modules/normalize.css/normalize.css"; */
 
 @font-face {
     font-family: "Oswald";
@@ -163,10 +163,11 @@ body {
     width: 100%;
     margin:  0;
     padding: 0 ;
+    
 }
 .footer__block{
     background-color: #092878;
-    height: 2%;
+    height: 0.25vh;
     padding: 0;
     margin: 0;
 }
@@ -264,11 +265,102 @@ body{
        
     }
     .title__container_small-name {
-        width: 80px;
+        width: 100px;
         height: 28px;
         font-size: 14px;
+        line-height: 1;
+        padding: 0 1px 0 0;
+    }
+    
+    
+    }
+
+    @media (max-width: 300px) {
+        body{
+            width: 100%;
+            padding: 0;
+            margin: 0;
+        }
+           
+            .header {
+                
+                background: #dcdcdc;
+                padding-left: 5%;
+                padding-right: 5%;
+                padding-top: 5px;
+                padding-bottom: 5px;
+                width: 100%;
+                height: 190px;
+            }
+            .header__content {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                width: 100%;
+            }
+            .header__block_upper-block{
+                width: 100%;
+            }
         
-    }
-    
-    
-    }
+            .header__block_lower-block {
+                /* float: none; */
+                width: 100%;
+        
+            }
+        
+            .menu__block {
+                width: 100%;
+               
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: center;
+                align-items: center;
+                margin: 0;
+                padding: 5px 0;
+            }
+        
+            /* .menu__item_write {
+                width: 100%;
+                height: 20px;
+                padding: 0;
+                margin: 0;
+            }
+            .menu__item_reg {
+                width: 100%;
+                height: 20px;
+                padding: 0;
+                margin: 0;
+            } */
+            .menu__item {
+                list-style-type: none;
+                background: rgba(18, 63, 226, 0.16);
+                background: #dcdcdc;
+                border: #092878 solid 1px;
+                color: #092878;
+                text-align: center;
+                width: 100%;
+                height: 20px;
+                padding: 0;
+                margin: 1px 0;
+                border-radius: 3px;
+                line-height: 1.4;
+                padding: 0 0 2px 0;
+            }
+            .title__container_large-name {
+                width: 100px;
+                height: 28x;
+                font-size: 18px;
+               
+            }
+            .title__container_small-name {
+                width: 100px;
+                height: 28px;
+                font-size: 14px;
+                line-height: 1;
+                padding: 0 1px 0 0;
+            }
+            
+            
+            }
+        
